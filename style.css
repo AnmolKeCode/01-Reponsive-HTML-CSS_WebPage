@@ -1,0 +1,214 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-box {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+
+.main-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/girl.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.box-leader {
+    height: 100%;
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.box-leader .box-1 {
+    width: 50%;
+}
+
+.textbox {
+    padding: 2rem 0 0 4rem;
+    padding-right: 1rem;
+}
+
+.textbox span {
+    color: yellow;
+}
+
+.textbox>div {
+    margin: 2rem 0;
+}
+
+.textbox h2 {
+    color: white;
+    font-size: 2.23rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.textbox p {
+    color: white;
+    line-height: 135%;
+    margin: 0;
+}
+
+.endbox {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+}
+
+.endbox .main-four-box {
+    height: fit-content;
+    padding: .2rem;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1rem;
+}
+
+.mini-box-1 {
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mini-box-1>h2 {
+    color: white;
+    font-size: 2rem;
+    margin: .2rem;
+
+}
+
+.mini-box-1>p {
+    color: white;
+    text-align: center;
+}
+
+.mini-box-1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .12;
+}
+
+
+@media only screen and (min-width:700px) and (max-width: 1100px) {
+    .main-box {
+        height: auto;
+        width: auto;
+        position: relative;
+    }
+
+    .endbox .main-four-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .textbox {
+        padding: 0;
+        padding-right: 0;
+    }
+
+    .textbox>div {
+        margin: 2rem 0;
+    }
+}
+
+@media only screen and (min-width:400px) and (max-width: 700px) {
+    .textbox{
+        padding: 2rem 0 0 1rem;
+        padding-right: 0;
+    }
+
+    .main-box{
+        height: auto;
+        width: auto;
+        position: relative;
+    }
+
+    .box-leader{
+        height: 100%;
+        padding: 0 10%;
+        display: block;
+        justify-content: center;
+    }
+
+    .box-leader .box-1{
+        width: 75%;
+    }
+
+    .endbox .main-four-box{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .mini-box-1{
+        width: 100%;
+    }
+}
+
+
+@media only screen and  (max-width: 400px) {
+    .textbox{
+        padding: 2rem 0 0 1rem;
+        padding-right: 0;
+    }
+
+    .main-box{
+        height: auto;
+        width: auto;
+        position: relative;
+    }
+
+    .box-leader{
+        height: 100%;
+        padding: 0 10%;
+        display: block;
+        justify-content: center;
+    }
+
+    .box-leader .box-1{
+        width: 100%;
+    }
+
+    .endbox .main-four-box{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .mini-box-1{
+        width: 100%;
+    }
+}
